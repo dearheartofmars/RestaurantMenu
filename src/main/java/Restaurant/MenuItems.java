@@ -41,4 +41,13 @@ public MenuItems(String name) {
     public void setNew(boolean aNew) {
         isNew = aNew;
     }
+//    TODO: Define custom toString() method
+
+    @Override
+    public String toString() {
+        return name + '\n' +
+                description + '\n' +
+                category.toUpperCase() + "| $" + price;
+    }
+
 }
